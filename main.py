@@ -12,6 +12,7 @@ template = """
 """
 
 try:
+    # Initialize OllamaLLM with error handling
     model = OllamaLLM(model="llama3", base_url="http://localhost:11434")
     prompt = ChatPromptTemplate.from_template(template)
     chain = prompt | model
