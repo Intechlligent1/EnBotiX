@@ -36,8 +36,6 @@ def main():
         bot_response = handle_conversation(st.session_state.context, user_input)
  
         st.write(f"Bot: {bot_response}")
-        # with st.sidebar:
-        #     st.write(" Hello")
 
         st.session_state.context += f"\nUser: {user_input}\nAI: {bot_response}"
 
